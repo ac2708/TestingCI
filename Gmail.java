@@ -14,7 +14,6 @@ public class Gmail
         try{
 
             System.setProperty("webdriver.chrome.driver", "C:\\Eclipse Automation\\chrome prerequisites\\chromedriver.exe");
-
             driver = new ChromeDriver();
 
             // And now use this to visit Google
@@ -27,6 +26,7 @@ public class Gmail
         driver.navigate().to("https://www.google.co.in/intl/en/options/");*/
             driver.navigate().back();
             driver.quit();
+            System.out.println("***Done..!!***");
         }
         catch(Exception e)
         {
